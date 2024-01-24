@@ -43,3 +43,5 @@ def run_telegram_bot():
                 sent_message = requests.get(API_link + f"/sendMessage?chat_id={chat_id}&text={response_text}")
     else:
         print("Нет обновления или пустой результат")
+
+run_telegram_bot()
