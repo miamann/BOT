@@ -39,8 +39,7 @@ def run_telegram_bot():
                 sent_message = requests.get(API_link + f"/sendMessage?chat_id={chat_id}&text={response_text}")
 
             else:
-                print(f"Received message: {text} from chat ID: {chat_id}")
                 response_text = "Привет, для работы со мной ты можешь использовать команду /translate_ru_en, /translate_en_ru, /help или /about"
                 sent_message = requests.get(API_link + f"/sendMessage?chat_id={chat_id}&text={response_text}")
     else:
-        print("No updates or empty result")
+        print("Нет обновления или пустой результат")
